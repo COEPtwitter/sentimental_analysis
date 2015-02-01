@@ -1,0 +1,24 @@
+ def read_words (word_file, out_file):
+    str = [word for line in open(word_file, 'r') for word in line.split()]
+    stemmed_word = [stem(word) for word in str]
+    with open(out_file, 'w') as file:
+        for item in stemmed_word:
+            file.write(item)
+            file.write('\t')
+            if item == '##':
+             file.write('\n')
+             file.write('\n')
+
+#updated vesion
+
+In [30]: def read_words (word_file, out_file):
+    str = [word for line in open(word_file, 'r') for word in line.split()]
+    stemmed_word = [stem(word) for word in str]
+    with open(out_file, 'w') as file:
+        for item in stemmed_word: 
+         file.write('\t')
+         if item == '.' or '!' or '...' or ',':
+             file.write('\n')
+         file.write(item)
+         file.write('\t')
+
