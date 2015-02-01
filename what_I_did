@@ -1,0 +1,23 @@
+
+saurabh tarkar
+computer engineering 
+Btech COEP.
+
+STEMMING - DATE - 27/1/15
+1. downloaded the python wrapper for stemming - stemming-1.0-py2.5.egg_FILES 
+	0.usign the algo(form lib)  porter 
+	1. my_code.py 	: wrote a simple python code which takes the imput of a file and gives stemmed file 
+	2. porter.py	: with the o/p file has the specific alligment of the words.
+
+2.seperating the tweets as pos and negative into two different file (another python code for sentimental words crosscheck manually since tweets were less)
+	- sentiment2.py	:simple naive bayes for sentimental analysing  
+	- outcome	:needed robust dictonary for this (exploring more in this regard)
+
+3.followed by the convertign the text file in the excel and writting the score of that tweet.
+
+note- specific identification of the tweets was made on the basis of delimeters (. , !, ## etc)
+
+
+Matrix thing of dataset :DATE - 3/02/15
+
+1.refer code for tfidf and that we get the token_id(from dictionay and word's tf-idf thing in that model in the code repo.)
